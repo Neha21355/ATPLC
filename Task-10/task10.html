@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<style>
+    body{
+        background-color:rgba(187, 199, 203, 0.664);
+        margin-left: 400px;
+        margin-right: 400px;
+        max-width: 600px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+
+    }
+    #submitbutton{
+        border: solid red;
+        border-radius: 5px;
+    }
+    #resetbutton{
+        border: solid red;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+    h2{
+      color: blue;  
+      align:"center"
+    }
+</style>
+
+<body>
+    <h2 align="center">STUDENT PROFILE</h2>
+
+    <fieldset>
+
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br />
+        <br />
+
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" name="phone" id="phone">
+        <br />
+        <br />
+
+        <label for="datepicker">Date Of Birth:</label>
+        <input type="date" name="datepicker" id="datepicker">
+        <br />
+        <br />
+        <span>Gender:</span>
+
+        <label for="gender1">Male</label>
+        <input type="radio" name="radio" id="gender1">
+        <label for="gender2">Female</label>
+        <input type="radio" name="radio" id="gender2">
+        <br />
+        <br />
+        <label for="country"> Country:</label>
+        <select name="select" id="country">
+            <option value="us">Select</option>
+            <option value="us">United State</option>
+            <option value="in">India</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+
+    </fieldset>
+    <br />
+    <fieldset>
+
+        <legend>Address</legend>
+        <label for="street">Street:</label>
+        <input type="text" name="street" id="street">
+        <br />
+        <br />
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <br />
+        <br />
+
+
+        <label for="zcode">Zip Code:</label>
+        <input type="number" name="zcode" id="zcode">
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>Education Done</legend>
+        <label for="checkbox1">Matriculation</label>
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        
+    
+        <label for="checkbox2">Intermediate</label>
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        
+    
+    
+        <label for="checkbox3">Graduation</label>
+        <input type="checkbox" name="checkbox" id="checkbox3">
+    
+       </fieldset>
+       <br/>
+    <fieldset>
+        <legend>Other Information</legend>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="15" rows="5"></textarea>
+        <br/>
+        <label for="checkbox">I agree to the terms of service </label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+    </fieldset>
+    <br />
+    
+    <input type="submit" value="Submit" id="submitbutton">
+    <input type="submit" value="Reset Now" id="resetbutton">
+
+</body>
+
+</html>
